@@ -31,7 +31,7 @@ If your available video memory is less than 14GB, please decrease the batch size
 ```
 
 2. Activate the environment you just created.
-3. Run the train.py script to train and test the model. The result will be saved in the /evaluation folder.
+3. Run the "train.py" script to train and test the model. The result will be saved in the "/evaluation" folder that automatically created by the script.
 
 ### Note
 1. The data preprocess procedure and the pretrained model download procedure may take a long time
