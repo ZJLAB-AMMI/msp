@@ -132,10 +132,12 @@ def train(model, name, train_loader, dev_loader, test_loader, train_loader_1, sl
                            local_rank=rank)
 
             logger.info('start evaluation in dev dataset, epoch: {}'.format(epoch))
-            model_eval(eval_model, test_loader, 'test', epoch, slot_index_value_dict, write_all_prediction,
+            model_eval(eval_model, dev_loader, 'dev', epoch, slot_index_value_dict, write_all_prediction,
                        target_device)
             logger.info('start evaluation in test dataset, epoch: {}'.format(epoch))
-            model_eval(eval_model, dev_loader, 'dev', epoch, slot_index_value_dict, target_device)
+            model_eval(eval_model, test_loader, 'test', epoch, slot_index_value_dict, write_all_prediction,
+                       target_device)
+
             # logger.info('start evaluation in train dataset, epoch: {}'.format(epoch))
             # model_eval(eval_model, train_loader_1, 'train', epoch, slot_index_value_dict, target_device)
 
