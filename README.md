@@ -1,4 +1,4 @@
-This project contains the source code and dataset to reproduce the main result of the paper 
+This project contains the source code and the dataset to reproduce the main result of the paper 
 "[On Tracking Dialogue State by Inheriting Slot Values in Mentioned Slot 
 Pools](https://arxiv.org/abs/2202.07156)". 
 
@@ -15,7 +15,7 @@ The training phase of this model (in the default setting) requires about 14GB vi
 If your available video memory is less than 14GB, please decrease the batch size to an appropriate value 
 (by using the command "python train.py --batch_size=*").
 
-### Execute
+### Execution
 1. Uncompress the multiwoz21.zip file.
    
    The directory should be like:
