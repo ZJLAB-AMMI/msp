@@ -22,7 +22,7 @@ config = {
     'pretrained_model': config_name + '-' + model_type,
     'max_length': 512,
     'dataset': dataset,
-    'batch_size': 8,
+    'batch_size': 16,
     'epoch': 20,
     'data_fraction': 1,
     'encoder_d_model': d_model,
