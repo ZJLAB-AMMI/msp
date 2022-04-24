@@ -35,7 +35,7 @@ If your available video memory is less than 14GB, please decrease the batch size
 The result will be saved in the /evaluation folder.
 
 ### Note
-1. The data preprocessing procedure and the pretrained model download procedure may take a long time
+1. The data preprocess procedure and the pretrained model download procedure may take a long time
 when you run the script first time, please wait patiently. 
 2. You can set the "use_multi_gpu" to True (by using the command "python train.py --multi_gpu=True") 
 to accelerate the training speed if you have multiple video cards.
